@@ -1,5 +1,5 @@
 # Use Maven-based image for building
-FROM maven:3.8.7-eclipse-temurin-17 AS builder
+FROM maven:3.8.7-eclipse-temurin-21 AS builder
 
 # Set the working directory
 WORKDIR /usr/src/app
@@ -24,7 +24,7 @@ WORKDIR /usr/local/tomcat/webapps/
 COPY --from=builder /usr/src/app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose Tomcat's default port
-EXPOSE 8078
+EXPOSE 8080
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
