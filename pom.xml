@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com</groupId>
-  <artifactId>Ecommerce-App</artifactId>
+  <artifactId>EcommerceApp</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Ecommerce-App Maven Webapp</name>
+  <name>EcommerceApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
@@ -73,7 +73,7 @@
   </distributionManagement>
 
   <build>
-    <finalName>Ecommerce-App</finalName>
+    <finalName>EcommerceApp</finalName>
 
     <plugins>
       <!-- Maven Compiler Plugin -->
